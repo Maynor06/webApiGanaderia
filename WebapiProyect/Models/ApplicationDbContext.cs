@@ -10,9 +10,9 @@ public partial class ApplicationDbContext : DbContext
     {
     }
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
     {
+
     }
 
     public virtual DbSet<Alertum> Alerta { get; set; }

@@ -163,3 +163,8 @@ C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\obj\De
 C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\obj\Debug\net9.0\WebapiProyect.pdb
 C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\obj\Debug\net9.0\WebapiProyect.genruntimeconfig.cache
 C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\obj\Debug\net9.0\ref\WebapiProyect.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\obj\Debug\net9.0\WebapiProyect.sourcelink.json
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
