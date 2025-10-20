@@ -65,9 +65,9 @@ namespace WebapiProyect.Services
 
             var claims = new List<Claim>
             {
-                new(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
-                new(ClaimTypes.Name, usuario.Nombre ?? "" ),
-                new(ClaimTypes.Role, usuario.Rol ?? "Default")
+                new("Id", usuario.IdUsuario.ToString()),
+                new("Nombre", usuario.Nombre ?? "" ),
+                new("Rol", usuario.Rol ?? "Default")
             };
 
             var token = new JwtSecurityToken(
