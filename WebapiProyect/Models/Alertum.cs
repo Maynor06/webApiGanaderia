@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WebapiProyect.Models;
 
-public partial class Alertum
+public partial class Alerta
 {
     public long IdAlerta { get; set; }
 

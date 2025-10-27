@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
 using WebapiProyect.Interfaces;
@@ -7,13 +7,30 @@ using WebapiProyect.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-   options.UseSqlServer(builder.Configuration.GetConnectionString("connectionDB")));
+    options.UseSqlServer(
+        // 1. Pasa tu cadena de conexión como primer argumento
+        builder.Configuration.GetConnectionString("connectionDB"),
+
+        // 2. Define las opciones específicas de SQL Server
+        sqlServerOptionsAction: sqlOptions =>
+        {
+            // 🎉 ¡Aquí se agrega la resiliencia!
+            sqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5, // Número máximo de reintentos
+                maxRetryDelay: TimeSpan.FromSeconds(30), // Tiempo de espera total
+                errorNumbersToAdd: null // Utiliza los errores transitorios predeterminados de EF Core
+            );
+        }
+    ));
 
 
 builder.Services.AddScoped<IAnimalService, AnimalService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
 builder.Services.AddScoped<ICargo, CargoService>();
+builder.Services.AddScoped<IDashboard, DashboardService>();
+builder.Services.AddScoped<IEspecie, EspecieService>();
+builder.Services.AddScoped<IRaza, RazaService>();
 
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwt.GetValue<string>("Key"));
@@ -66,7 +83,7 @@ app.UseCors("AllowNextJs");
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

@@ -1,12 +1,17 @@
-﻿using WebapiProyect.Models;
+﻿using WebapiProyect.DTO;
+using WebapiProyect.Models;
 
 namespace WebapiProyect.Interfaces
 {
     public interface IAnimalService {
 
-        Task<Animal?> GetAnimalById(long id);
+        Task<AnimalDto> GetAnimalById(long id);
         Task<Animal> CreateAnimal(Animal animal);
         Task<Animal?> UpdateAnimal(long id, Animal animal);
         Task<bool> DeleteAnimal(long id);
+        Task<List<AnimalDto>> GetAllAnimalsAsync();
+        Task<List<Animal>> GetAnimalsForEstado(string estado);
+        Task<GestionAnimalDto> GetGestionAnimal();
+
     }
 }

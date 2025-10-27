@@ -11,7 +11,7 @@ public partial class AplicacionVacuna
 
     public long? VacunaId { get; set; }
 
-    public DateOnly? Fecha { get; set; }
+    public DateOnly? Fecha { get; set; } 
 
     public string? DosisAplicada { get; set; }
 

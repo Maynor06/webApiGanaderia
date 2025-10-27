@@ -21,7 +21,7 @@ namespace WebapiProyect.Controllers
         {
             if (empleado == null) return BadRequest(new { message = "No hay datos" });
             var created = await _empleadoService.CreateEmpleado(empleado);
-            return CreatedAtAction(nameof(created), new { id = created.IdEmpleado }, new
+            return CreatedAtAction(nameof(GetEmpleadoById), new { id = created.IdEmpleado }, new
             {
                 message = "Empleado creado correctamente.",
                 data = created

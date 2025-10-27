@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using WebapiProyect.DTO;
 
 namespace WebapiProyect.Models;
 
@@ -15,7 +16,7 @@ public partial class ApplicationDbContext : DbContext
 
     }
 
-    public virtual DbSet<Alertum> Alerta { get; set; }
+    public virtual DbSet<Alerta> Alerta { get; set; }
 
     public virtual DbSet<Animal> Animals { get; set; }
 
@@ -119,10 +120,10 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<Ventum> Venta { get; set; }
 
-    
+    public virtual DbSet<AnimalDto> animalDto { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Alertum>(entity =>
+        modelBuilder.Entity<Alerta>(entity =>
         {
             entity.HasKey(e => e.IdAlerta).HasName("PK__alerta__1227953E01E8D887");
 
@@ -1392,6 +1393,8 @@ public partial class ApplicationDbContext : DbContext
                 .HasForeignKey(d => d.ClienteId)
                 .HasConstraintName("FK_venta_cliente");
         });
+
+        modelBuilder.Entity<AnimalDto>().HasNoKey();
 
         OnModelCreatingPartial(modelBuilder);
     }

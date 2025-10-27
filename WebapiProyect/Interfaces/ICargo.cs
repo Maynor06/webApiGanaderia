@@ -1,4 +1,5 @@
-﻿using WebapiProyect.Models;
+﻿using WebapiProyect.DTO;
+using WebapiProyect.Models;
 
 namespace WebapiProyect.Interfaces
 {
@@ -6,6 +7,6 @@ namespace WebapiProyect.Interfaces
     {
 
         Task<Cargo> CreateCargo(Cargo cargo);
-        Task<List<Cargo>> GetAllCargos();
+        Task<List<CargoDto>> GetAllCargos();
     }
 }
