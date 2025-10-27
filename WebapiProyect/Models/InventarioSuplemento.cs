@@ -9,11 +9,11 @@ public partial class InventarioSuplemento
 
     public long? SuplementoId { get; set; }
 
-    public decimal? Cantidad { get; set; }
+    public decimal Cantidad { get; set; }
 
     public DateOnly? FechaIngreso { get; set; }
 
-    public DateOnly? FechaVencimiento { get; set; }
+    public DateOnly FechaVencimiento { get; set; }
 
     public string? Lote { get; set; }
 

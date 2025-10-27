@@ -11,7 +11,7 @@ public partial class ProduccionLeche
 
     public DateOnly? Fecha { get; set; }
 
-    public decimal? Litros { get; set; }
+    public decimal Litros { get; set; }
 
     public long? EmpleadoId { get; set; }
 

@@ -31,6 +31,10 @@ builder.Services.AddScoped<ICargo, CargoService>();
 builder.Services.AddScoped<IDashboard, DashboardService>();
 builder.Services.AddScoped<IEspecie, EspecieService>();
 builder.Services.AddScoped<IRaza, RazaService>();
+builder.Services.AddScoped<Ipotrero, PotreroService>();
+builder.Services.AddScoped<Isuplementos, SuplementoService>();
+builder.Services.AddScoped<ICompra, CompraService>();
+builder.Services.AddScoped<IProduccion, ProduccionService>();
 
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwt.GetValue<string>("Key"));

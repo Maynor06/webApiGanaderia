@@ -9,9 +9,9 @@ public partial class Compra
 
     public long? ProveedorId { get; set; }
 
-    public DateOnly? Fecha { get; set; }
+    public DateOnly Fecha { get; set; }
 
-    public decimal? Total { get; set; }
+    public decimal Total { get; set; }
 
     public string? TipoPago { get; set; }
 

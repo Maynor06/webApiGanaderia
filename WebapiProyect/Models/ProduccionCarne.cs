@@ -9,7 +9,7 @@ public partial class ProduccionCarne
 
     public long? AnimalId { get; set; }
 
-    public decimal? PesoCanal { get; set; }
+    public decimal PesoCanal { get; set; }
 
     public DateOnly? Fecha { get; set; }
 
