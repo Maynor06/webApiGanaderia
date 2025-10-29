@@ -9,7 +9,7 @@ public partial class Establo
 
     public string? Nombre { get; set; }
 
-    public int? Capacidad { get; set; }
+    public int Capacidad { get; set; }
 
     public long? EmpleadoId { get; set; }
 

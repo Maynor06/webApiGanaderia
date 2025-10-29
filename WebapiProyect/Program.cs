@@ -35,6 +35,10 @@ builder.Services.AddScoped<Ipotrero, PotreroService>();
 builder.Services.AddScoped<Isuplementos, SuplementoService>();
 builder.Services.AddScoped<ICompra, CompraService>();
 builder.Services.AddScoped<IProduccion, ProduccionService>();
+builder.Services.AddScoped<ICorral, CorralService>();
+builder.Services.AddScoped<IEstablo, EstabloService>();
+builder.Services.AddScoped<IInfraestructura, InfraestructuraService>();
+builder.Services.AddScoped<IMedicamento, MedicamentoService>();
 
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwt.GetValue<string>("Key"));
