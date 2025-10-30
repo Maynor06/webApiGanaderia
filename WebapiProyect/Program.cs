@@ -39,6 +39,10 @@ builder.Services.AddScoped<ICorral, CorralService>();
 builder.Services.AddScoped<IEstablo, EstabloService>();
 builder.Services.AddScoped<IInfraestructura, InfraestructuraService>();
 builder.Services.AddScoped<IMedicamento, MedicamentoService>();
+builder.Services.AddScoped<IHerramienta, HerramientaService>();
+builder.Services.AddScoped<IMaquinaria, MaquinariaService>();
+builder.Services.AddScoped<IVentas , VentaService>();
+builder.Services.AddScoped<IFacturas, FacturaService>();
 
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwt.GetValue<string>("Key"));

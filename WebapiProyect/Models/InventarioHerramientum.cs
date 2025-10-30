@@ -9,7 +9,7 @@ public partial class InventarioHerramientum
 
     public long? HerramientaId { get; set; }
 
-    public decimal? Cantidad { get; set; }
+    public decimal Cantidad { get; set; }
 
     public string? Estado { get; set; }
 
