@@ -9,6 +9,11 @@ namespace WebapiProyect.Services
     {
         private readonly ApplicationDbContext _context;
 
+        public HerramientaService(ApplicationDbContext context)
+        {
+            _context = context;
+        }   
+
         public async Task<Herramientum> ActualizarHerramienta(long id, Herramientum herramienta)
         {
             try

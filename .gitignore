@@ -4,3 +4,7 @@ obj
 *.user
 *.suo
 *.vscode/ 
+# Directorios de compilación/binarios
+[Bb]in/
+[Oo]bj/
+WebapiProyect/bin/Debug/net9.0/appsettings.json

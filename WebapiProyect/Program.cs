@@ -43,6 +43,9 @@ builder.Services.AddScoped<IHerramienta, HerramientaService>();
 builder.Services.AddScoped<IMaquinaria, MaquinariaService>();
 builder.Services.AddScoped<IVentas , VentaService>();
 builder.Services.AddScoped<IFacturas, FacturaService>();
+builder.Services.AddScoped<GeneradorArchivos>();
+builder.Services.AddScoped<IDataAccessService, DataAccessService>();
+builder.Services.AddScoped<IOpenAIService, OpenAIService>();
 
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwt.GetValue<string>("Key"));

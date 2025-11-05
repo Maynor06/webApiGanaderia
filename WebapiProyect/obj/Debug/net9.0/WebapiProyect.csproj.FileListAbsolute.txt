@@ -168,3 +168,14 @@ C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\De
 C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\ClosedXML.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\itextsharp.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\RBush.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Users\dmayn\OneDrive\Documents\proyectitos\WebapiProyect\WebapiProyect\bin\Debug\net9.0\OpenAI-DotNet.dll
