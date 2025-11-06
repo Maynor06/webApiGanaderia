@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebapiProyect.DTO;
 using WebapiProyect.Interfaces;
 
 namespace WebapiProyect.Controllers
@@ -8,7 +9,7 @@ namespace WebapiProyect.Controllers
     [ApiController]
     public class CompraController : ControllerBase
     {
-        private readonly ICompra _compra; 
+        private readonly ICompra _compra;
 
         public CompraController(ICompra compra)
         {
@@ -21,5 +22,31 @@ namespace WebapiProyect.Controllers
             var results = await _compra.GetComprasAsync();
             return Ok(results);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateCompra([FromBody] compraRequestDto compraDto)
+        {
+            var result = await _compra.CreateCompra(compraDto);
+            return Ok(result);
+        }
+
+        [HttpPut]
+        [Route("update/{id}")]
+        public async Task<IActionResult> UpdateCompra([FromBody] compraRequestDto compraDto, long id)
+        {
+            var result = await _compra.UpdateCmpra(compraDto, id);
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        [Route("delete/{id}")]
+        public async Task<IActionResult> DeleteCompra(long id)
+        {
+            var result = await _compra.DeleteCompra(id);
+            if (!result)
+                return NotFound(new { message = "Compra no encontrada." });
+            return Ok(new { message = "Compra eliminada correctamente." });
+        }
+
     }
 }

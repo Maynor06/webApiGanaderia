@@ -65,6 +65,9 @@ namespace WebapiProyect.Services
         {
             var empleado = await _context.Empleados.FindAsync(id);
             if (empleado == null) return false;
+
+            var planillas = _context.Planillas.Where(p => p.EmpleadoId == id);
+            _context.Planillas.RemoveRange(planillas);
             _context.Empleados.Remove(empleado);
             await _context.SaveChangesAsync();
             return true;

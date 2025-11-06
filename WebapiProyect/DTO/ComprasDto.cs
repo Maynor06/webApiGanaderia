@@ -7,6 +7,8 @@
         public string Proveedor { get; set; }
         public string tipoPago { get; set; }
         public decimal total {  get; set; }
+        public long ProveedorId { get; set; }
+        public List<DetalleCompraRequestDto> DetalleCompras { get; set; } = new List<DetalleCompraRequestDto>();
 
     }
 }
